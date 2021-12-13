@@ -86,6 +86,13 @@ sudo apt update
 ```bash
 sudo apt install kubectl kubelet kubeadm kubernetes-cni
 ```
+
+install flannel network
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+```
+
 If swap is on, turn it off.
 
 ```bash
